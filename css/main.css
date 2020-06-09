@@ -1,24 +1,18 @@
 html {
-  /*height: 100%; ja*/
-  font-size: 16px;
+	font-size: 16px;
 }
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	/*height: 100%; ja*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
 	font-size: 1em;
 }
 
-img {
-  width: 100%;
-}
 .container{
-	width: 90%;
 	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -50,27 +44,29 @@ h4 {
 p {
 	font-size: 0.875em; /*14px;*/
 	line-height: 21px;
-    padding: 0 30px;
+    /*padding: 0 30px;*/
 }
 
 /*The widths are in a percentage!*/
 header {
-	width: 100%; /*ja*/
 	/*height: 110px;*/
-	border-bottom: 3px solid #77a466;
+	/*border-bottom: 3px solid #77a466;*/
+	width: 100%;
+	text-align: center;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: column wrap;
-	/*height: 20%;*/
+	flex-flow: row wrap;
 }
 
 header h1 {
-	/*width: 100%*/
 	/*float: left;*/
+	width: 100%;
 	margin: 0;
+	/*padding: 38px 20px 20px 20px;*/
 	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
@@ -78,26 +74,22 @@ header h1 span {
 
 header nav {
 	/*float: right;*/
-	/*width: 100%;*/
-	padding: 46px 0;
-	/*clear: both;*/
+	width: 100%;
+	padding: 20px 0;     /*was 46px 0;*/
 }
-header nav ul {	
+header nav ul {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
+	
 }
 header nav ul li {
-	/*width: 100% ja*/
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.875em; /*14px;*/
-	padding: 10px 10px;
+	font-size: .875em;
+	padding: 10px 7.5px;
+	list-style-type: none;
+	text-align: center;
 	/*display: inline;*/
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
-	
 }
 header nav ul li a{
 	text-decoration: none;
@@ -105,37 +97,29 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
-.top-section {
-	width: 100%;
-	margin: 0 auto;
-}
-
+.top-section,
 .bottom-section {
-	width: 100%; /*ja*/
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;
-}
-
-.main-image {
-	height: auto;
-	width: 100%; /*ja*/
-	/*float: left;*/
-}
-.main-image img {
-	border-bottom: 3px solid #77a466;
-}
-
-.main-title {
-	/*height: auto;*/
-	width: 100%;/**/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	/*float: left;*/
+	/*margin: 0 auto;
+	clear: both;*/
+}
+
+.main-image {
+	/*height: auto;
+	float: left;*/
+}
+.main-image img {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	/*height: auto;
+	float: left;*/
 }
 .main-title h3 {
 	text-align: left;
@@ -144,49 +128,39 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	/*width: 33%;*/
-	/*width: 100%;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-	/*height: auto;*/
-	/*float: left;*/
+	width: 100%;
 	border-top: 1px solid #eee;
+	/*width: 33%;*/
+	/*height: auto;
+	float: left;*/
 }
 
 .section-one h4 {
-	/*width: 100%;*/
 	padding: 10px 0;
 }
 
-.section-one {
-	/*width: 100%;*/
-	flex-flow: column wrap;
-	/*float: left;
-	clear: both;*/
-}
-
+/*
 .section-two {
-	/*border-left: 1px solid #eee;
-	border-right: 1px solid #eee;*/
-	flex-flow: column wrap;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 }
+*/
 
+/*
 .section-two h4,
 .section-three h4 {
 	padding: 10px 30px;
 }
+*/
 
 .menu {
-	/*width: 100%;*/
 	list-style: none;
 	padding: 0;
 }
@@ -197,32 +171,31 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 1em; /*16px;*/
+	font-size: 1em;
 	line-height: 21px;
 }
 
 .address {
-	width: 100%;
-	font-size: 1em; /*16px;*/
+	font-size: 1em;
 	line-height: 24px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
 }
 
 /*The widths are in a percentage!*/
 footer {
-	width: 100%; /*ja*/
 	/*height: 50px;*/
+	width: 100%;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	/*margin: 0 auto;
+	clear: both;*/
 	text-align: center;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em;
 }
